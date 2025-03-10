@@ -29,7 +29,7 @@
 ### Custom CSS
 
 1. Create a directory called `public` inside the `dist` directory.
-2. Create a CSS file `style.css` inside the `public` directory.
+2. Create a CSS file `style.css` inside the `public/css` directory.
 3. In your `server.ts`, add a middleware so that the server knows where to load static files such as CSS and JS. Make sure to import the *path* module first: `import path from 'path'`.
 
     ```js
