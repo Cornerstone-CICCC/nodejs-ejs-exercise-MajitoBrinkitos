@@ -1,0 +1,16 @@
+<%- include('partials/header', { pageTitle: 'Contact Us' }) %>
+
+<main>
+  <h1>Contact Us</h1>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea numquam consequuntur sequi nobis nam, harum velit. Repellat in ad numquam, illo vero expedita recusandae consequuntur pariatur? Cupiditate amet recusandae accusantium repellendus commodi esse tenetur eos molestiae consectetur voluptatibus non nobis, porro quasi minus, veniam maiores, id nisi magnam ducimus quaerat.</p>
+  <ul>
+    <% contacts.forEach(contact => { %>
+      <%# Individual contact info %>
+      <li>
+        <%= contact %>
+      </li>
+    <% }) %>
+  </ul>
+</main>
+
+<%- include('partials/footer') %>
