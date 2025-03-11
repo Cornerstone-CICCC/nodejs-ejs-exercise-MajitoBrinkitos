@@ -11,6 +11,77 @@
       </li>
     <% }) %>
   </ul>
+
+  <!--Contact Form-->
+  <p>Please fill out this form with the required information</p>
+        <!--Form-->
+        <form action="https://register-demo.freecodecamp.org" method="post">
+            <!--First Fieldset: name, email, password-->
+            <fieldset>
+                <!--First Name-->
+                <label for="first-name">
+                    Enter Your First Name: <input required id="first-name" type="text" name="nombre">
+                </label>
+                <!--Last Name-->
+                <label for="last-name">
+                    Enter Your Last Name: <input required id="last-name" type="text" name="apellido">
+                </label>
+                <!--Email-->
+                <label for="email">
+                    Enter Your Email: <input required id="email" type="email" name="correo">
+                </label>
+                <!--Password-->
+                <label for="new-password">
+                    Enter Your New Password: <input required id="new-password" type="password" name="pass" pattern=[a-z0-5]{8,}>
+                </label>
+            </fieldset>
+            <!--Second Fieldset-->
+            <fieldset>
+                <legend>
+                    Account type (required)
+                </legend>
+                <label for="personal-account">
+                    <!--account-type so ONLY ONE option is selected-->
+                    <input class="inline" type="radio" name="account-type" id="personal-account" checked> Personal
+                </label>
+                <label for="business-account">
+                    <input class="inline" type="radio" name="account-type" id="business-account"> Business
+                </label>
+            </fieldset>
+            <!--Third Fieldset-->
+            <fieldset>
+                <!--Upload a file-->
+                <label for="profile-picture">
+                    Upload a profile picture: 
+                    <input id="profile-picture" type="file" name="archivo">
+                </label>
+                <!--Age-->
+                <label for="age">
+                    Input your age (years):
+                    <input id="age" type="number" name="edad" min="13" max="120">
+                </label>
+                <!--Dropdown-->
+                <label for="referrer">How did you hear about us?
+                    <select id="referrer" name="opciones">
+                        <option value="">(select one)</option>
+                        <option value="1">freeCodeCamp News</option>
+                        <option value="2">freeCodeCamp YouTube Channel</option>
+                        <option value="3">freeCodeCamp Forum</option>
+                        <option value="4">Other</option>
+                    </select>
+                  </label>
+                <!--Textarea-->
+                <label for="bio">
+                    Provide a bio: <textarea id="bio" name="acerca" rows="3" cols="30" placeholder="Please, let us know how we can help you..."></textarea>
+                </label>
+            </fieldset>
+            <!--Terms and Conditions-->
+            <label for="terms-and-conditions">
+                <input class="inline" id="terms-and-conditions" type="checkbox" required />I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+            </label>
+            <!--Submit-->
+            <input type="submit" value="Submit">
+        </form>
 </main>
 
 <%- include('partials/footer') %>
