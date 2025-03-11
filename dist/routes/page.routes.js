@@ -6,7 +6,7 @@ const pageRouter = (0, express_1.Router)();
 pageRouter.get('/', (req, res) => {
     res.status(200).render('index', {
         title: "Travelo Official Website",
-        welcomeMessage: "Your Next Vacation awaits for you",
+        welcomeMessage: "Your Next Vacation awaits for you  ",
         showYear: true
     });
 });

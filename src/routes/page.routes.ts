@@ -5,7 +5,7 @@ const pageRouter = Router()
 pageRouter.get('/', (req: Request, res: Response) => {
     res.status(200).render('index', {
         title: "Travelo Official Website",
-        welcomeMessage: "Your Next Vacation awaits for you",
+        welcomeMessage: "Your Next Vacation awaits for you  ",
         showYear: true
     })
 })
